@@ -1,0 +1,12 @@
+{
+  "theme": {
+    "slug": "tahina-blog",
+    "name": "Tahina Blog",
+    "author": "Tahina Ramanohisoa"
+  },
+  "dev": {
+    "browserSync": {
+      "proxyURL": "faniry.localhost"
+    }
+  }
+}

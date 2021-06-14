@@ -1,0 +1,29 @@
+version: 0.0
+os: linux
+files:
+  - source: /wp-content/
+    destination: /bitnami/wordpress/wp-content
+file_exists_behavior: OVERWRITE
+permissions:
+  - object: /bitnami/wordpress
+    pattern: "wp-content"
+    owner: bitnami
+    group: daemon
+    mode: 775
+    type:
+      - directory
+  - object: /bitnami/wordpress/wp-content
+    owner: bitnami
+    group: daemon
+    mode: 664
+    type:
+      - file
+hooks:
+  ApplicationStart:
+    - location: scripts/start_services.sh
+      timeout: 300
+      runas: bitnami
+  ApplicationStop:
+    - location: scripts/stop_services.sh
+      timeout: 300
+      runas: bitnami
