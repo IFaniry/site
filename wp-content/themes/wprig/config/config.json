@@ -1,0 +1,15 @@
+{
+  "theme": {
+    "slug": "faniry-blog",
+    "name": "Faniry Blog",
+    "author": "Faniry Ramanohisoa"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "faniry.local",
+      "bypassPort": "8181",
+      "https": true
+    }
+  }
+}

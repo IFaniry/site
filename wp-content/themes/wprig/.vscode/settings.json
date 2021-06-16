@@ -1,0 +1,6 @@
+{
+    "php.validate.executablePath": "c:/php7.4.20/php.exe",
+    "php.executablePath": "c:/php7.4.20/php.exe",
+    "phpcs.standard": "WordPress",
+    "editor.renderWhitespace": "all"
+}
