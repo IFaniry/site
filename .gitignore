@@ -4,20 +4,19 @@
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+# uncomment for including some plugins
+# !wp-content/mu-plugins/
+# !wp-content/plugins/custom/
 
-# ignore these plugins
-wp-content/plugins/hello.php
-
-# ignore specific themes
-wp-content/themes/twenty*/
+# My themes, for now
+!wp-content/themes/twentytwentyone/
+!wp-content/themes/wprig/
+!wp-content/themes/faniry-blog/
 
 # ignore node dependency directories
 node_modules/
 # ignore composer dependency directories
-/wp-content/themes/tahina-blog/vendor/
+wp-content/themes/*/vendor/
 
 # ignore log files and databases
 *.log
